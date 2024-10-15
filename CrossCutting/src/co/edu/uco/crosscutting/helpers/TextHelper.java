@@ -1,6 +1,8 @@
 package co.edu.uco.crosscutting.helpers;
 
+
 public class TextHelper {
+	
 	public static final String EMPTY = "";
 	
 	private TextHelper() {
@@ -29,7 +31,9 @@ public class TextHelper {
 		return isEmpty(applyTrim(string));
 		
 	}
-	public static String applyTrim(final String string) {
+	public static String applyTrim (final String string) {
 		return getDefault(string).trim();
 	}
+
+	
 }
