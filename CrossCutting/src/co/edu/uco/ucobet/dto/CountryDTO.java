@@ -8,8 +8,12 @@ public class CountryDTO extends DomainDTO{
 	private String name;
 	
 	public CountryDTO() {
-		super(UUIDHelper.getDefaultAssString());
+		super(UUIDHelper.getDefaultAsString());
 		setName(TextHelper.EMPTY);
+	}
+	
+	public static final CountryDTO create() {
+		return new CountryDTO();
 	}
 
 	public String getName() {
